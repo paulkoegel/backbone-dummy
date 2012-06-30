@@ -15,4 +15,13 @@ class PostsController < ApplicationController
   def show
   end
 
+  def update
+    @post = Post.find params[:id]
+    if @post.update_attributes params[:post]
+      render :nothing => true, :status => 200
+    else
+      render :json => @post.reload, :status => 422
+    end
+  end
+
 end

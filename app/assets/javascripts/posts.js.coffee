@@ -10,9 +10,3 @@ $ ->
   $('.left').append(postView.render().el)
   $('.right').append(rightPostView.render().el)
   $('.right').append(secondRightPostView.render().el)
-
-  # $('.left').on 'blur', '[contenteditable]', (event) ->
-  #   event.preventDefault()
-  #   post.set('title', $(@).text())
-  #   console.log $(@).text()
-  #   console.log post.get('title')
