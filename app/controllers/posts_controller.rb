@@ -9,6 +9,7 @@ class PostsController < ApplicationController
   def index
     @posts = Post.all
     gon.post = @posts.first
+    gon.second_post = @posts.second
   end
 
   def show
