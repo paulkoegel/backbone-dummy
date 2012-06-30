@@ -25,6 +25,8 @@ end
 group :development do
   gem 'vendorer'
   gem 'heroku'
+  gem 'quiet_assets'
+  gem 'lograge'
 end
 
 group :development, :test do
