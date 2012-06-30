@@ -7,7 +7,7 @@ class PostsController < ApplicationController
   end
 
   def index
-    @posts = Post.all
+    @posts = Post.order('created_at')
     gon.post = @posts.first
     gon.second_post = @posts.second
   end
