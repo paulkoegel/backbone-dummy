@@ -1,0 +1,27 @@
+development:
+  adapter: mysql2
+  encoding: utf8
+  username: root
+  password: 
+  database: dealbase_development
+
+staging:
+  adapter: mysql2
+  encoding: utf8
+  username: root
+  password: 
+  database: dealbase_staging
+
+test: &test
+  adapter: mysql2
+  encoding: utf8
+  username: root
+  password: 
+  database: dealbase_test
+
+production:
+  adapter: mysql2
+  encoding: utf8
+  username: root
+  password: 
+  database: dealbase_production
