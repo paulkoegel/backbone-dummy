@@ -58,5 +58,9 @@ module PaulsRepo
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    # might be a good idea, fine without so far, cf. https://github.com/netzpirat/haml_coffee_assets/issues/14
+    config.assets.paths << "#{Rails.root}/app/assets/javascripts/templates"
+
   end
 end
