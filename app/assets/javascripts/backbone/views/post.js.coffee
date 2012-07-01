@@ -1,5 +1,6 @@
 DB.PostView = Backbone.View.extend(
-  className: 'm-post'
+  tagName: 'li'
+  className: 'm-post--list--item'
   initialize: ->
     _.bindAll @, 'render'
     @model.bind 'change', @render
