@@ -10,6 +10,10 @@ class PostsController < ApplicationController
     @posts = Post.order('created_at')
     gon.post = @posts.first
     gon.second_post = @posts.second
+    respond_to do |format|
+      format.html
+      format.json { render :json => @posts }
+    end
   end
 
   def show
