@@ -1,3 +1,3 @@
-window.Posts = Backbone.Collection.extend
-  model: Post
+DB.Posts = Backbone.Collection.extend
+  model: DB.Post
   url: '/posts'

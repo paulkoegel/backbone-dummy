@@ -1,4 +1,4 @@
-window.PostView = Backbone.View.extend(
+DB.PostView = Backbone.View.extend(
   className: 'm-post'
   initialize: ->
     _.bindAll @, 'render'

@@ -1,10 +1,8 @@
-window.Post = Backbone.Model.extend
+DB.Post = Backbone.Model.extend
   url: ->
     "/posts/#{@id}"
   initialize: ->
     @bind 'change:title', ->
-      console.log @get('title')
-      console.log @previous('title')
       Backbone.sync 'update', @, {}
       # $.ajax
       #   type: 'PUT'

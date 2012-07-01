@@ -1,4 +1,4 @@
-window.PostBoxView = Backbone.View.extend(
+DB.PostBoxView = Backbone.View.extend(
   tagName: 'div'
   className: 'm-post-box'
   initialize: ->

@@ -1,1 +1,1 @@
-window.Dealbase = new Object
+window.DB = new Object
