@@ -1,4 +1,6 @@
 $ ->
+  $('.m-main-content-wrapper').addClass('is-loaded')
+  $('.edit-me').addClass('is-loaded')
 
   DB.posts = new DB.Posts()
 

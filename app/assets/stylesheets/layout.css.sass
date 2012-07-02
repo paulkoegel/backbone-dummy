@@ -1,7 +1,17 @@
-.main-content-wrapper
+body
+  background: #444
+
+.m-main-content-wrapper
   width: 960px
   margin: 50px auto 0
   position: relative
+  background: white
+  +border-radius(10px)
+  padding: 20px
+  opacity: 0
+  +transition(opacity 1.3s ease-out)
+  &.is-loaded
+    opacity: 1
 
 .clearfix
   +clearfix
@@ -30,7 +40,16 @@
 .edit-me
   position: absolute
   background-image: url('edit_me.png')
+  background-repeat: no-repeat
+  background-position: center center
   width: 158px
   height: 149px
-  left: -165px
+  left: -205px
   top: 137px
+  background-color: #ddd
+  +border-radius(10px)
+  padding: 20px
+  opacity: 0
+  +transition(opacity 1.2s ease-out)
+  &.is-loaded
+    opacity: 1
