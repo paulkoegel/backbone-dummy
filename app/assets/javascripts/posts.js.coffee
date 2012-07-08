@@ -2,7 +2,7 @@ $ ->
   $('.m-main-content-wrapper').addClass('is-loaded')
   $('.edit-me').addClass('is-loaded')
 
-  DB.posts = new DB.Posts(gon.posts)
+  DB.posts = new DB.Posts()
   DB.posts.reset(gon.posts)
 
   DB.postsView = new DB.PostsView
