@@ -5,6 +5,7 @@ DB.PostsView = Backbone.View.extend
     _.bindAll @, 'render'
     @template = JST['posts/index']
     @collection.bind 'reset', @render
+    @collection.bind 'add', @render
   render: ->
     $(@el).html(@template())
     $posts = @.$('.m-posts--list')

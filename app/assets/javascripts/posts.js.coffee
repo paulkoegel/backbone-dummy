@@ -19,6 +19,15 @@ $ ->
   $('.left .m-post-wrapper').html DB.postView.render().el
 
 
+  DB.posts.on 'add', ->
+    @
+    console.log 'collection registered add'
+
+  $('.m-post-add').click (event) ->
+    event.preventDefault()
+    DB.posts.add new DB.Post({title:'AAAAA'})
+
+
   # EVERYTHING BELOW ONLY KEPT FOR REFERENCE
   # ========================================
   # initializing the collection with gon.posts would save a request but
