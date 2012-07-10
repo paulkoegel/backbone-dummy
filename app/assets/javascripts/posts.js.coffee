@@ -1,18 +1,22 @@
-$ ->
+DB.fadeInContent = ->
   $('.m-main-content-wrapper').addClass('is-loaded')
   $('.edit-me').addClass('is-loaded')
 
-  DB.posts = new DB.Posts()
-  DB.posts.reset(gon.posts)
+$ ->
+  #DB.fadeInContent()
 
-  DB.postsView = new DB.PostsView
-    collection: DB.posts
+  DB.postsRouter = new DB.PostsRouter()
+  Backbone.history.start
+    pushState: true
+
+  # demo only - navigate to certain Backbone URL
+  # DB.postsRouter.navigate('blank', true)
 
   DB.postView = new DB.PostView
     model: DB.posts.models[0]
 
-  $('.right').append DB.postsView.render().el
-  $('.left').append DB.postView.render().el
+  # $('.right').append DB.postsView.render().el
+  $('.left .m-post-wrapper').html DB.postView.render().el
 
 
   # EVERYTHING BELOW ONLY KEPT FOR REFERENCE

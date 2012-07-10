@@ -1,15 +1,21 @@
 body
   background: #444
 
+.m-main-headline
+  color: #ddd
+  width: 960px
+  margin: 20px auto 0
+  text-transform: uppercase
+
 .m-main-content-wrapper
   width: 960px
-  margin: 50px auto 0
+  margin: 20px auto 0
   position: relative
   background: white
   +border-radius(10px)
   padding: 20px
-  opacity: 0
-  +transition(opacity 1.3s linear)
+  //opacity: 0
+  //+transition(opacity 1.3s linear)
   &.is-loaded
     opacity: 1
 
@@ -49,7 +55,7 @@ body
   background-color: #ddd
   +border-radius(10px)
   padding: 20px
-  opacity: 0
+  //opacity: 0
   +transition(opacity 1.2s ease-in-out)
   &.is-loaded
     opacity: 1
