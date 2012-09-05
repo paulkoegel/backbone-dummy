@@ -1,6 +1,0 @@
-%h1.m-post-headline{contenteditable: true, data: {id: @id}}= @title
-.date= @created_at
-%img{src: '/assets/some_dude.png'}
-
-.m-post-text{contenteditable: true}
-  = @text

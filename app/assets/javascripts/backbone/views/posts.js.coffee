@@ -1,4 +1,4 @@
-DB.PostsView = Backbone.View.extend
+class DB.Views.Posts extends Backbone.View
   tagName: 'section'
   className: 'm-posts'
   initialize: ->
@@ -10,7 +10,7 @@ DB.PostsView = Backbone.View.extend
     $(@el).html(@template())
     $posts = @.$('.m-posts--list')
     @collection.each (post) ->
-      view = new DB.PostBoxView
+      view = new DB.Views.PostBox
         model: post
         collection: @collection
       $posts.append view.render().el

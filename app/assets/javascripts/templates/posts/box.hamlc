@@ -1,5 +1,6 @@
-%h1.m-post-headline= @title
-.date= @created_at
+%h1.m-post-headline
+  = @title
+
 %img{src: '/assets/some_dude.png'}
 
 .m-post-text

@@ -1,0 +1,7 @@
+%h1.m-post--headline.editable{contenteditable: true}
+  = @title
+
+%img{src: '/assets/some_dude.png'}
+
+.m-post--text.editable{contenteditable: true}
+  = @text

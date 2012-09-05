@@ -1,6 +1,6 @@
-DB.PostBoxView = Backbone.View.extend(
+class DB.Views.PostBox extends Backbone.View
   tagName: 'div'
-  className: 'm-post-box'
+  className: 'm-post_box'
   initialize: ->
     _.bindAll @, 'render'
     @model.bind 'change', @render
@@ -8,4 +8,3 @@ DB.PostBoxView = Backbone.View.extend(
   render: ->
     $(@el).html(@template @model.toJSON())
     @
-)

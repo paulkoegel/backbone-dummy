@@ -8,9 +8,6 @@ class PostsController < ApplicationController
 
   def index
     @posts = Post.order('created_at')
-    gon.posts = @posts
-    gon.post = @posts.first
-    gon.second_post = @posts.second
     respond_to do |format|
       format.html
       format.json { render :json => @posts }
