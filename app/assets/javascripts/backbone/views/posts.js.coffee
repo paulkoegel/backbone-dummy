@@ -5,8 +5,8 @@ class DB.Views.Posts extends Backbone.View
   initialize: ->
     _.bindAll @, 'render'
     @template = JST['posts/index']
-    @collection.bind 'reset', @render
-    @collection.bind 'add', @render
+    @collection.on 'reset', @render
+    @collection.on 'add', @render
 
   render: ->
     $(@el).html @template()

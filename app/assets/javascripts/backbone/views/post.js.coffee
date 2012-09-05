@@ -3,7 +3,7 @@ class DB.Views.Post extends Backbone.View
   className: 'm-post'
   initialize: ->
     _.bindAll @, 'render'
-    @model.bind 'change', @render
+    @model.on 'change', @render
     @template = JST['posts/show']
   render: ->
     $(@el).html(@template @model.toJSON())
