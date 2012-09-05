@@ -1,7 +1,7 @@
-%h1.m-post-headline
+%h1.m-post--headline
   = @title
 
-%img{src: '/assets/some_dude.png'}
+%img{src: '/assets/some_dude.png', :class => 'avatar'}
 
-.m-post-text
+.m-post--text
   = @text
