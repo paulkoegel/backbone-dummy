@@ -5,9 +5,9 @@ JavaScript MVC
 
 Pros
 ----
-+ active community & widely used
++ active community &amp; widely used
 + mature (initial commit: Sep 30, 2010)
-+ good documentation & many great tutorials
++ good documentation &amp; many great tutorials
 + lightweight (6kB, v0.9.2)
 + templating engine agnostic (HAMLc, underscore templates, handlebars, eco, jade etc.)
 
@@ -139,6 +139,20 @@ Folder Structure
       *  posts.js.coffee
 
 
+Installation in Rails
+---------------------
+<code>
+  gem 'rails-backbone'  # github.com/codebrew/backbone-rails
+  group :assets do
+    gem 'haml_coffee_assets'  # github.com/netzpirat/haml_coffee_assets
+  end
+</code>
+
+### optional gems
+[rabl](github.com/nesquena/rabl); [Railscast](railscasts.com/episodes/322-rabl)
+[gon](github.com/gazay/gon); [Railscast](railscasts.com/episodes/324-passing-data-to-javascript)
+
+
 Extensions
 ----------
 * [Backbone Marionette](github.com/derickbailey/backbone.marionette)
@@ -152,7 +166,7 @@ Hierarchies of Backbone Models - has many relations etc.
 
 * [HAML Coffee Assets](github.com/netzpirat/haml_coffee_assets)
   Backbone templates with HAML syntax. After '-' and '=' you'll be writing CoffeeScript instead of Ruby.
-  
+
 
 Resources
 ---------
