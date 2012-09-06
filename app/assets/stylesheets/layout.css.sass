@@ -14,8 +14,6 @@ body
   background: white
   +border-radius(10px)
   padding: 20px
-  //opacity: 0
-  //+transition(opacity 1.3s linear)
   &.is-loaded
     opacity: 1
 
@@ -26,9 +24,11 @@ body
   margin: 0 auto
 
 .left
-  width: 479px
+  width: 459px
   border-right: 1px solid grey
   float: left
+  padding: 10px
+  padding-top: 0
 
 .right
   width: 480px
@@ -43,19 +43,6 @@ body
 [contenteditable]:hover
   outline: 1px dotted #ccc
 
-.edit-me
-  position: absolute
-  background-image: url('edit_me.png')
-  background-repeat: no-repeat
-  background-position: center center
-  width: 158px
-  height: 149px
-  left: -205px
-  top: 137px
-  background-color: #ddd
-  +border-radius(10px)
-  padding: 20px
-  //opacity: 0
-  +transition(opacity 1.2s ease-in-out)
-  &.is-loaded
-    opacity: 1
+.editable
+  background: pink
+  color: #555

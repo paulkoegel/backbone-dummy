@@ -9,6 +9,7 @@ class DB.Views.Posts extends Backbone.View
     @collection.on 'add', @render
 
   render: ->
+    # Marionette makes this a LOT less painful
     $(@el).html @template()
     $posts = @.$('.m-posts--list')
     @collection.each (post) ->
