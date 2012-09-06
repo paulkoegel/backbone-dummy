@@ -3,6 +3,13 @@ Backbone
 
 JavaScript MVC
 
+The Gist of it all
+------------------
+1. MVC
+  - provides structure for your Javascript code - less jQuery spaghetti code
+2. Synching
+  - offers painless synching of Backbone models to and from your server via Ajax and JSON
+
 Pros
 ----
 + active community &amp; widely used
